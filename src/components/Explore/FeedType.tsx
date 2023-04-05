@@ -1,0 +1,78 @@
+import {
+  ClockIcon,
+  FireIcon,
+  StarIcon,
+  TrendingUpIcon
+} from '@heroicons/react/outline'
+import clsx from 'clsx'
+import { useRouter } from 'next/router'
+import React, { Dispatch, FC, ReactNode } from 'react'
+
+interface Props {
+  setFeedType: Dispatch<string>
+  feedType: string
+}
+
+const FeedType: FC<Props> = ({ setFeedType, feedType }) => {
+  const { push } = useRouter()
+
+  interface FeedLinkProps {
+    name: string
+    icon: ReactNode
+    type: string
+    testId: string
+  }
+
+  const FeedLink: FC<FeedLinkProps> = ({ name, icon, type, testId }) => (
+    <button
+      type="button"
+      onClick={() => {
+        push({ query: { type: type.toLowerCase() } })
+        setFeedType(type)
+      }}
+      className={clsx(
+        {
+          'text-brand bg-brand-100 dark:bg-opacity-20 bg-opacity-100 font-bold':
+            feedType === type
+        },
+        'flex items-center space-x-2 rounded-lg px-4 sm:px-3 py-2 sm:py-1 text-brand hover:bg-brand-100 dark:hover:bg-opacity-20 hover:bg-opacity-100'
+      )}
+      aria-label={name}
+      data-test={testId}
+    >
+      {icon}
+      <div className="hidden sm:block">{name}</div>
+    </button>
+  )
+
+  return (
+    <div className="flex gap-3 px-5 mt-3 sm:px-0 sm:mt-0">
+      <FeedLink
+        name="Latest"
+        icon={<ClockIcon className="w-4 h-4" />}
+        type="LATEST"
+        testId="type-latest"
+      />
+      <FeedLink
+        name="Popular"
+        icon={<StarIcon className="w-4 h-4" />}
+        type="TOP_COMMENTED"
+        testId="type-top-commented"
+      />
+      <FeedLink
+        name="Hot"
+        icon={<FireIcon className="w-4 h-4" />}
+        type="TOP_MIRRORED"
+        testId="type-top-mirrored"
+      />
+      <FeedLink
+        name="Trending"
+        icon={<TrendingUpIcon className="w-4 h-4" />}
+        type="TOP_COLLECTED"
+        testId="type-top-collected"
+      />
+    </div>
+  )
+}
+
+export default FeedType
