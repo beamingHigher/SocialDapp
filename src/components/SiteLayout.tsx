@@ -79,7 +79,7 @@ const SiteLayout: FC<Props> = ({ children }) => {
       setCurrentUser(null)
       Cookies.remove('accessToken')
       Cookies.remove('refreshToken')
-      localStorage.removeItem('liveloud.store')
+      localStorage.removeItem('socialdapp.store')
       if (disconnect) disconnect()
     }
 

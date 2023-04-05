@@ -1,7 +1,7 @@
 export const apps = [
   {
-    id: 'liveloud',
-    name: 'LIVELOUD',
+    id: 'socialdapp',
+    name: 'SocialDapp',
     logo: 'logo.svg'
   },
   {

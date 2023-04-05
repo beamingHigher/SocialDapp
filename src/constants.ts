@@ -5,9 +5,9 @@ export const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 export const IS_DEVELOPMENT = process.env.NODE_ENV === 'development'
 export const IS_MAINNET = process.env.NEXT_PUBLIC_IS_MAINNET === 'true'
 
-export const APP_NAME = 'LIVELOUD'
+export const APP_NAME = 'SocialDapp'
 export const DESCRIPTION =
-  'LIVELOUD is a decentralized social media  dApp built with Lens Protocol 🌿'
+  'SocialDapp is a decentralized social media  dApp built with Lens Protocol 🌿'
 export const DEFAULT_OG = 'https://www.liveloud.io/logo.jpg'
 
 // Git
@@ -16,7 +16,7 @@ export const GIT_COMMIT_SHA =
 export const GIT_COMMIT_REF = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF
 
 // Misc
-export const CONTACT_EMAIL = 'info@saaarp.com'
+export const CONTACT_EMAIL = 'info@test.com'
 export const PUBLIC_URL = process.env.NEXT_PUBLIC_URL
 export const RELAY_ON =
   PUBLIC_URL === 'https://www.liveloud.io' ||

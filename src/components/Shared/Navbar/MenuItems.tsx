@@ -131,7 +131,7 @@ const MenuItems: FC<Props> = ({ pingData }) => {
                   setCurrentUser(null)
                   Cookies.remove('accessToken')
                   Cookies.remove('refreshToken')
-                  localStorage.removeItem('liveloud.store')
+                  localStorage.removeItem('socialdapp.store')
                   if (disconnect) disconnect()
                 }}
                 className={({ active }: { active: boolean }) =>

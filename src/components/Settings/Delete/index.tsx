@@ -73,7 +73,7 @@ const DeleteSettings: FC = () => {
     setCurrentUser(null)
     Cookies.remove('accessToken')
     Cookies.remove('refreshToken')
-    localStorage.removeItem('liveloud.store')
+    localStorage.removeItem('socialdapp.store')
     if (disconnect) disconnect()
     location.href = '/'
   }

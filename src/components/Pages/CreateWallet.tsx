@@ -22,7 +22,7 @@ const CreateWallet: FC = () => {
       >
         <div className="relative text-center">
           <h1 className="text-3xl font-semibold text-white md:text-4xl">
-            What crypto wallets can I use with LiveLoud?
+            What crypto wallets can I use with SocialDapp?
           </h1>
         </div>
       </div>
@@ -39,13 +39,13 @@ const CreateWallet: FC = () => {
               <br />
               <p>
                 This guide introduces many of the crypto wallets that are
-                supported on LIVELOUD.
+                supported on SocialDapp.
               </p>
               <div className="mt-8 mb-5 text-xl font-bold text-black dark:text-white">
                 <YouTube videoId="7pmA02zY8Ag" opts={opts} />
               </div>
               <h1 className="mb-5 mt-5 text-3xl font-semibold text-black md:text-3xl">
-                What crypto wallets can I use with LIVELOUD?
+                What crypto wallets can I use with SocialDapp?
               </h1>
               <p className="mb-5">
                 If you're wondering which crypto wallet to use - the best way is
@@ -65,7 +65,7 @@ const CreateWallet: FC = () => {
                 minutes to install.
               </p>
               <p className="mt-3">
-                You can find the full list of wallets supported by LIVELOUD
+                You can find the full list of wallets supported by SocialDapp
                 below.{' '}
               </p>
 

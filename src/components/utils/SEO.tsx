@@ -29,7 +29,7 @@ const SEO: FC<Props> = ({ title = APP_NAME, description = DESCRIPTION }) => {
       <link rel="manifest" href="/manifest.json" />
 
       <meta property="og:url" content="https://www.liveloud.io" />
-      <meta property="og:site_name" content="LIVELOUD" />
+      <meta property="og:site_name" content="SocialDapp" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={DEFAULT_OG} />
@@ -37,13 +37,13 @@ const SEO: FC<Props> = ({ title = APP_NAME, description = DESCRIPTION }) => {
       <meta property="og:image:height" content="400" />
 
       <meta property="twitter:card" content="summary" />
-      <meta property="twitter:site" content="LIVELOUD" />
+      <meta property="twitter:site" content="SocialDapp" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image:src" content={DEFAULT_OG} />
       <meta property="twitter:image:width" content="400" />
       <meta property="twitter:image:height" content="400" />
-      <meta property="twitter:creator" content="SAAARP" />
+      <meta property="twitter:creator" content="lens" />
 
       <link
         rel="search"

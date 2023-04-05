@@ -36,6 +36,6 @@ export const useAppPersistStore = create(
       staffMode: false,
       setStaffMode: (staffMode) => set(() => ({ staffMode }))
     }),
-    { name: 'liveloud.store' }
+    { name: 'socialdapp.store' }
   )
 )

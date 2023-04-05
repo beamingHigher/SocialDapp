@@ -61,11 +61,11 @@ const Footer: FC = () => {
       </a> */}
       <a
         className="pr-3 hover:font-bold"
-        href={'https://www.saaarp.com/'}
+        href={'https://www.lens.com/'}
         target="_blank"
         rel="noreferrer noopener"
       >
-        🔯 Powered by SAAARP Metaverse.
+        🔯 Powered by Lens protocol.
       </a>
     </footer>
   )

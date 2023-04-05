@@ -14,6 +14,6 @@ export const usePublicationPersistStore = create(
       setPersistedPublication: (persistedPublication) =>
         set(() => ({ persistedPublication }))
     }),
-    { name: 'liveloud.store' }
+    { name: 'socialdapp.store' }
   )
 )

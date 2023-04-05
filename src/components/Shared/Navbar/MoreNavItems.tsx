@@ -85,7 +85,7 @@ const MoreNavItems: FC = () => {
               )}
               <Menu.Item
                 as={NextLink}
-                href="https://linktr.ee/saaarp"
+                href="https://linktr.ee/lens"
                 className={({ active }: { active: boolean }) =>
                   clsx({ 'dropdown-active': active }, 'menu-item')
                 }

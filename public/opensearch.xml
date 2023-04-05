@@ -1,6 +1,6 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-    <ShortName>Liveloud</ShortName>
-    <Description>Liveloud Search</Description>
+    <ShortName>SocialDapp</ShortName>
+    <Description>SocialDapp Search</Description>
     <Url type="text/html" method="get" template="https://lenster.xyz/search?q={searchTerms}&type=profiles"/>
     <Image width="64" height="64">https://lenster.xyz/favicon.ico</Image>
     <InputEncoding>UTF-8</InputEncoding>
